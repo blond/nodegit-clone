@@ -16,7 +16,7 @@
   ],
   "main": "lib/clone.js",
   "files": [
-    "libs/**",
+    "lib/**",
     "index.js"
   ],
   "dependencies": {
