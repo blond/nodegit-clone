@@ -19,6 +19,9 @@
     "lib/**",
     "index.js"
   ],
+  "engines": {
+    "node": ">= 4.0"
+  },
   "dependencies": {
     "is-ssh": "1.3.0",
     "nodegit": "0.11.5",
