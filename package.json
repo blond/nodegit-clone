@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "ava": "0.12.0",
-    "babel-cli": "6.6.0",
+    "babel-cli": "6.6.4",
     "babel-eslint": "5.0.0",
     "babel-preset-nodejs-lts": "1.2.1",
     "babel-register": "6.6.0",
