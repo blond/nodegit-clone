@@ -35,7 +35,7 @@
     "babel-register": "6.6.5",
     "coveralls": "2.11.9",
     "es6-promisify": "3.0.0",
-    "eslint": "2.6.0",
+    "eslint": "2.7.0",
     "fs-extra": "0.26.7",
     "nyc": "6.1.1",
     "tempfile": "1.1.1"
