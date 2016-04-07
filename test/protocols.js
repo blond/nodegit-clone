@@ -13,25 +13,25 @@ test.after('clear', () => tmps.clear());
 test('should clone repository with http', async t => {
     const repo = await clone({ url: 'http://github.com/nodegit/test', localPath: tmpdir() });
 
-    t.ok(repo instanceof Repository);
+    t.truthy(repo instanceof Repository);
 });
 
 test('should clone repository with https', async t => {
     const repo = await clone({ url: 'https://github.com/nodegit/test', localPath: tmpdir() });
 
-    t.ok(repo instanceof Repository);
+    t.truthy(repo instanceof Repository);
 });
 
 test('should clone repository with git', async t => {
     const repo = await clone({ url: 'git://github.com/nodegit/test.git', localPath: tmpdir() });
 
-    t.ok(repo instanceof Repository);
+    t.truthy(repo instanceof Repository);
 });
 
 test('should clone repository with ssh', async t => {
     const repo = await clone({ url: 'git@github.com:nodegit/test.git', localPath: tmpdir() });
 
-    t.ok(repo instanceof Repository);
+    t.truthy(repo instanceof Repository);
 });
 
 test('should clone repository with ssh while manually loading a key', async t => {
@@ -44,7 +44,7 @@ test('should clone repository with ssh while manually loading a key', async t =>
         }
     });
 
-    t.ok(repo instanceof Repository);
+    t.truthy(repo instanceof Repository);
 });
 
 test('should clone repository with ssh while manually loading an encrypted key', async t => {
@@ -58,5 +58,5 @@ test('should clone repository with ssh while manually loading an encrypted key',
         }
     });
 
-    t.ok(repo instanceof Repository);
+    t.truthy(repo instanceof Repository);
 });

@@ -28,7 +28,7 @@
     "throw": "1.1.0"
   },
   "devDependencies": {
-    "ava": "0.13.0",
+    "ava": "0.14.0",
     "babel-cli": "6.6.5",
     "babel-eslint": "6.0.2",
     "babel-preset-nodejs-lts": "1.2.1",
@@ -59,6 +59,7 @@
     "verbose": true,
     "require": [
       "babel-register"
-    ]
+    ],
+    "babel": "inherit"
   }
 }
