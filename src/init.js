@@ -6,7 +6,7 @@ import repoName from './repo-name';
 /**
  * Initializes options.
  *
- * @param {Object} opts
+ * @param {Object} opts - options
  * @returns {String}
  */
 export default function init(opts={}) {

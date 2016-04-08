@@ -28,6 +28,7 @@ export default function tmpdirs() {
         },
         /**
          * Removed all tmp dirs.
+         * @returns {Promise}
          */
         clear: () => {
             return Promise.all(dirs.map(dir => remove(dir)));

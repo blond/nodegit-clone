@@ -41,7 +41,7 @@ export default function clone(opts) {
             return git.Cred.userpassPlaintextNew(ghToken, "x-oauth-basic");
         };
     } else if (ssh.publicKey || isSSH(url)) {
-        callbacks.credentials = (url, username) => {
+        callbacks.credentials = (repoUrl, username) => {
             // Forward user name to validate authentication.
             return git.Cred.sshKeyFromAgent(username, ssh.publicKey, ssh.privateKey, ssh.passphrase);
         };
