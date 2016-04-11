@@ -38,7 +38,7 @@
     "eslint": "2.7.0",
     "eslint-config-pedant": "0.2.0",
     "fs-extra": "0.26.7",
-    "nyc": "6.2.1",
+    "nyc": "6.4.0",
     "tempfile": "1.1.1"
   },
   "scripts": {
