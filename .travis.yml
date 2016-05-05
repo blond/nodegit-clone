@@ -6,7 +6,6 @@ matrix:
   include:
     - node_js: "4"
       env: COVERALLS=1
-    - node_js: "6"
 
 # This is a random private key used purely for testing.
 before_script:
