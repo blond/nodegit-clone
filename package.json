@@ -29,10 +29,7 @@
   },
   "devDependencies": {
     "ava": "0.14.0",
-    "babel-cli": "6.8.0",
     "babel-eslint": "6.0.4",
-    "babel-preset-nodejs-lts": "2.0.1",
-    "babel-register": "6.8.0",
     "coveralls": "2.11.9",
     "es6-promisify": "4.0.0",
     "eslint": "2.9.0",
@@ -46,10 +43,7 @@
     "lint": "eslint .",
     "unit-test": "ava",
     "cover": "nyc ava",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "prepublish": "npm run clean && npm run compile",
-    "compile": "babel src -d lib",
-    "clean": "rm -rf lib/"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "ava": {
     "files": [
@@ -57,10 +51,6 @@
       "!test/fixtures/**",
       "!test/utils/**"
     ],
-    "verbose": true,
-    "require": [
-      "babel-register"
-    ],
-    "babel": "inherit"
+    "verbose": true
   }
 }

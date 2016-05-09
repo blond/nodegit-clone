@@ -1,8 +1,8 @@
-import path from 'path';
+const path = require('path');
 
 const absolutify = path.join.bind(path, __dirname);
 
-export default {
+module.exports = {
     unsafe: {
         publicKey: absolutify('./unsafe_rsa.pub'),
         privateKey: absolutify('./unsafe_rsa')

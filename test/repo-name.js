@@ -1,6 +1,6 @@
-import test from 'ava';
+const test = require('ava');
 
-import repoName from '../src/repo-name';
+const repoName = require('../lib/repo-name');
 
 test('should get name for http', t => {
     const url = 'http://github.com/user/repo';

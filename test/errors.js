@@ -1,11 +1,11 @@
-import path from 'path';
+const path = require('path');
 
-import test from 'ava';
-import fs from 'fs-extra';
-import promisify from 'es6-promisify';
+const test = require('ava');
+const fs = require('fs-extra');
+const promisify = require('es6-promisify');
 
-import clone from '../src/clone';
-import tmpdirs from './utils/tmpdirs';
+const clone = require('../lib/clone');
+const tmpdirs = require('./utils/tmpdirs');
 
 const outputFile = promisify(fs.outputFile);
 const tmps = tmpdirs();

@@ -1,6 +1,6 @@
-import fs from 'fs-extra';
-import promisify from 'es6-promisify';
-import tempfile from 'tempfile';
+const fs = require('fs-extra');
+const promisify = require('es6-promisify');
+const tempfile = require('tempfile');
 
 const remove = promisify(fs.remove);
 
@@ -11,7 +11,7 @@ const remove = promisify(fs.remove);
  *
  * @returns {{ tmpdir: Function, clear: Funciton }}
  */
-export default function tmpdirs() {
+module.exports = function tmpdirs() {
     const dirs = [];
 
     return {
@@ -34,4 +34,4 @@ export default function tmpdirs() {
             return Promise.all(dirs.map(dir => remove(dir)));
         }
     };
-}
+};

@@ -1,7 +1,7 @@
-import path from 'path';
-import test from 'ava';
+const path = require('path');
+const test = require('ava');
 
-import init from '../src/init';
+const init = require('../lib/init');
 
 test('should support url as string', t => {
     const { url } = init('url');

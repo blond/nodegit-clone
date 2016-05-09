@@ -1,9 +1,9 @@
-import test from 'ava';
-import { Repository } from 'nodegit';
+const test = require('ava');
+const Repository = require('nodegit').Repository;
 
-import clone   from '../src/clone';
-import sshKeys from './fixtures/ssh-keys';
-import tmpdirs from './utils/tmpdirs';
+const clone   = require('../lib/clone');
+const sshKeys = require('./fixtures/ssh-keys');
+const tmpdirs = require('./utils/tmpdirs');
 
 const tmps = tmpdirs();
 const tmpdir = tmps.tmpdir.bind(tmpdirs);
