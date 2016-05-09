@@ -28,15 +28,15 @@
     "throw": "1.1.0"
   },
   "devDependencies": {
-    "ava": "0.14.0",
-    "babel-eslint": "6.0.4",
-    "coveralls": "2.11.9",
-    "es6-promisify": "4.0.0",
-    "eslint": "2.9.0",
-    "eslint-config-pedant": "0.4.0",
-    "fs-extra": "0.30.0",
-    "nyc": "6.4.4",
-    "tempfile": "1.1.1"
+    "ava": "^0.14.0",
+    "babel-eslint": "^6.0.4",
+    "coveralls": "^2.11.9",
+    "es6-promisify": "^4.0.0",
+    "eslint": "^2.9.0",
+    "eslint-config-pedant": "^0.4.0",
+    "fs-extra": "^0.30.0",
+    "nyc": "^6.4.4",
+    "tempfile": "^1.1.1"
   },
   "scripts": {
     "test": "npm run lint && npm run cover",
