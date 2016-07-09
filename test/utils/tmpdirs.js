@@ -1,8 +1,5 @@
-const fs = require('fs-extra');
-const promisify = require('es6-promisify');
+const del = require('del');
 const tempfile = require('tempfile');
-
-const remove = promisify(fs.remove);
 
 /**
  * Util for works with tmp dirs.
@@ -31,7 +28,7 @@ module.exports = function tmpdirs() {
          * @returns {Promise}
          */
         clear: () => {
-            return Promise.all(dirs.map(dir => remove(dir)));
+            return Promise.all(dirs.map(dir => del(dir, { force: true })));
         }
     };
 };
