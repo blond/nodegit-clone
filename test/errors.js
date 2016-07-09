@@ -1,13 +1,12 @@
 const path = require('path');
 
 const test = require('ava');
-const fs = require('fs-extra');
 const promisify = require('es6-promisify');
 
 const clone = require('../lib/clone');
 const tmpdirs = require('./utils/tmpdirs');
 
-const outputFile = promisify(fs.outputFile);
+const outputFile = promisify(require('output-file'));
 const tmps = tmpdirs();
 const tmpdir = tmps.tmpdir.bind(tmpdirs);
 
