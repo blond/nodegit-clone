@@ -1,6 +1,6 @@
 {
   "name": "nodegit-clone",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Clone git repository with nodegit",
   "license": "MIT",
   "repository": "blond/nodegit-clone",
