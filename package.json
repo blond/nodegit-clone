@@ -34,7 +34,6 @@
     "es6-promisify": "^5.0.0",
     "eslint": "^3.0.0",
     "eslint-config-pedant": "^0.8.0",
-    "fs-extra": "^0.30.0",
     "nyc": "^8.1.0",
     "output-file": "^1.1.1",
     "tempfile": "^1.1.1"
