@@ -28,7 +28,7 @@
     "throw": "1.1.0"
   },
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.17.0",
     "coveralls": "^2.11.9",
     "del": "^2.2.1",
     "es6-promisify": "^5.0.0",
